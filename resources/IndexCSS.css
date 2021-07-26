@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+*::selection{
+    background: rgb(14, 102, 114);
+
+}
+.main{
+    height: auto;
+    width: auto;
+    background-image: url('Index/main_bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+HeadBanner{
+    width: 100%;
+    height: 65px;
+    top:2px;
+    background-color: white;
+    border-radius: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    opacity: 95%;
+    height: 80px;
+    
+}
+HeadBanner:hover{
+    border-style: solid;
+    border-color:rgb(227, 91, 73);
+    border-top-width:0 ;
+    border-left-width:0 ;
+    border-right-width:0 ;
+    border-bottom-width:2 ;
+}
+.Head{
+    width:100%;
+    height: 95vh;
+}
+.Links{
+    float: right;
+    width:auto;
+    
+
+}
+
+.Caption{
+    padding-top: 16%;
+    padding-left: 10%;
+    width: 40%;
+    border-bottom: white solid 2px;
+}
+.Caption h1{
+    font-size: 60px;
+}
+.SubCaption p{
+    width: 50%;
+    font-size: large;
+    position: relative;
+    left: 11%;
+}
+.SubCaption span{
+    opacity: 0%;
+    position: relative;
+}
+.SubCaption :hover span{
+    animation: SubCaptionAnimation 0.87s;
+    animation-fill-mode:forwards; /* 停留在最后一帧*/
+
+}
+
+@keyframes SubCaptionAnimation {
+    0%{ opacity: 0;left:0px}
+    100%{opacity: 100%;left:30px }
+}
+
+.Body{
+    width: 100%;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.Entrance{
+    margin:0 auto;
+    width:55%;
+    height: 55vh;
+    background-color: rgba(43, 43, 43,0.9);
+    box-shadow:10px 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+    left:15%;
+
+
+}
+.EntranceFrame{
+    width: 80%;
+    height: auto;
+    position:relative;
+    left:4%;
+    top:10%;
+}
+.EntranceBlock{
+    position:relative;
+    left:15%;
+    float:left;
+    font-size: 30px;
+    text-align: center;
+    width: 25%;
+    height: 20%;
+    border-bottom:2px solid white ;
+}
+.EntranceBlock:hover{
+    animation: BlockAnimation 0.6s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes BlockAnimation {
+    0%{border: solid; border-top-width: 2px;}
+    20%{border-top-width: 37px;}
+    22%{border-top-width: 33px;}
+    100%{border:solid;border-top-width: 37px;}
+    
+}
+.EntranceText{
+    float:left;
+    position:absolute;
+    right:90%;
+    top:35%;
+    width:30%;
+    height:22%;
+    background-color: rgb(163, 163, 163);
+    box-shadow:10px 15px rgba(255, 255, 255, 0.2);
+}
+.EntranceText h1{
+    color:black;
+    text-align: center;
+    position:relative;
+    top:30%;
+}
+
+.Introduce{
+    margin:0 auto;
+    width:55%;
+    height: 55vh;
+    background-color: rgba(43, 43, 43,0.9);
+    box-shadow:10px 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+    right:15%;
+}
+.IntroduceText{
+    font-size: 16.5px;
+    width: 80%;
+    position:relative;
+    left:4%;
+    top:10%;
+}
+.IntroduceAbout{
+    float:right;
+    position:absolute;
+    left:90%;
+    top:35%;
+    width:30%;
+    height:22%;
+    background-color: rgb(163, 163, 163);
+    box-shadow:10px 15px rgba(255, 255, 255, 0.2);
+}
+.IntroduceAbout h1{
+    color:black;
+    text-align: center;
+    position:relative;
+    top:30%;
+
+
+}
+
+.MessageBoard{
+    opacity: 90%;
+    width:40%;
+    height: 80px;
+    background-color:rgb(43, 43, 43);
+    margin:0 auto;
+    border-left:solid 15px rgb(158, 158, 158);
+    text-align: center;
+    
+}
+.MessageBoard p{
+    position: relative;
+    top: 30px;
+}
+.Foot{
+    width:100%;
+    height: 55px;
+    background-color:rgb(39, 0, 0);
+    text-align: center;
+}
+
+.Foot p{
+    color:black
+}
